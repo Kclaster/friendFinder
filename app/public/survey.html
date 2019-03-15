@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body style="margin: 15px">
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="friend"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <img id="friend-pic" src="" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>Survey Questions</h1>
+    <hr />
+    <h2>About You</h2>
+    <form action="submit">
+      <div style="display:grid">
+        <label for="name">Name (Required)</label>
+        <input style="width: 40vw" id="name" type="text" />
+
+        <label for="name">Link to Photo of yourself (Required)</label>
+        <input style="width: 40vw" id="pic" type="text" />
+      </div>
+      <hr />
+      <h3 style="margin-top: 25px">Question 1</h3>
+      <label for="one">You like the color orange.</label>
+      <br />
+      <select style="width: 80px" name="one" id="one">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 2</h3>
+      <label for="two">You know what the Crusty Krab is.</label>
+      <br />
+
+      <select style="width: 80px" name="two" id="two">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 3</h3>
+      <label for="three"
+        >You would rather visit the future than the past.</label
+      >
+      <br />
+
+      <select style="width: 80px" name="three" id="three">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 4</h3>
+      <label for="four">You like dogs more than cats.</label>
+      <br />
+
+      <select style="width: 80px" name="four" id="four">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 5</h3>
+      <label for="five">You love your mother.</label>
+      <br />
+
+      <select style="width: 80px" name="five" id="five">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 6</h3>
+      <label for="six">You cried when Moana's grandma became a stingray.</label>
+      <br />
+
+      <select style="width: 80px" name="six" id="six">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 7</h3>
+      <label for="seven">You code.</label>
+      <br />
+
+      <select style="width: 80px" name="seven" id="seven">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 8</h3>
+      <label for="eight">You put toilet paper on its roll appropriately.</label>
+      <br />
+
+      <select style="width: 80px" name="eight" id="eight">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 9</h3>
+      <label for="nine"
+        >You do not know what the last question is talking about.</label
+      >
+      <br />
+
+      <select style="width: 80px" name="nine" id="nine">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3 style="margin-top: 25px">Question 10</h3>
+      <label for="ten">You would rather join slytherine than hufflepuff.</label>
+      <br />
+
+      <select style="width: 80px" name="ten" id="ten">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+    <button
+      style="margin-top: 25px"
+      id="submitForm"
+      class="btn btn-primary"
+      type="submit"
+    >
+      Submit
+    </button>
+    <script type="text/javascript">
+      $('#submitForm').on('click', function(event) {
+        event.preventDefault();
+        let clientData = {
+          name: $('#name').val(),
+          pic: $('#pic').val(),
+          score: [
+            $('#one').val(),
+            $('#two').val(),
+            $('#three').val(),
+            $('#four').val(),
+            $('#five').val(),
+            $('#six').val(),
+            $('#seven').val(),
+            $('#eight').val(),
+            $('#nine').val(),
+            $('#ten').val()
+          ]
+        };
+
+        $.ajax({
+          type: 'POST',
+          url: '/api/friends',
+          data: clientData,
+          success: function(response) {
+            $('#friend').text(response.name);
+            $('#friend-pic').attr('src', response.photo);
+            $('#myModal').modal('toggle');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
